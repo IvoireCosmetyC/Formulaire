@@ -3,8 +3,8 @@
   <head>
     <title>Formulaire Projet Luminéa</title>
     <!-- Favicons -->
-    <link href="/favicon~1.png" rel="shortcut icon" type="image/png">
-    <link href="/apple-touch-icon.png" rel="apple-touch-icon" type="image/png">
+    <link href="/favicon~1.png" rel="icon">
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <meta charset="utf-8">
     <link href="styles.css" rel="stylesheet">
@@ -33,13 +33,20 @@
     <form id="survey-form" action="https://getform.io/f/e5fb633d-a172-492f-8f4e-e61430c56add" method="post">
       <fieldset id="personal-info">
         <h1>INFORMATIONS PERSONNELLES</h1
-        <label id="name-label" for="name" >Nom et Prénoms <input required id="name" type="text" name="Nom:" placeholder="Entrez votre Nom complet " /></label>
+        <label id="name-label" for="name" >Nom et Prénoms <input required id="name" type="text" name="Nom_complet:" placeholder="Entrez votre Nom complet " /></label>
         <label id for="dropdown">Sexe
             <select id="dropdown" name="Sexe:">
               <option value="0">-- Sélectionnez --</option>
               <option value="Femme">Femme</option>
               <option value="Homme">Homme</option></select></label>
         <label id="name-label" for="name" >Age <input required id="name" type="text" name="Age:" placeholder="Entrez votre Age " /></label>
+        <label id for="dropdown">Statut social
+            <select id="dropdown" name="Statut_social:">
+              <option value="0">-- Sélectionnez --</option>
+              <option value="Eleve">Elève</option>
+              <option value="Etudiant(e)">Etudiant(e)</option>
+              <option value="Travailleur(se)">Travailleur(se)</option>
+              <option value="Sans_emploi">Sans emploi</option></select></label>
         <label id="email-label" for="email">Email <input required id="email" type="email" name="Email:" placeholder="Entrez votre Email"/></label>
         <label id="tel-label" for="tel">Téléphone <input required id="tel" type="tel" name="Telephone:" placeholder="Entrez votre Téléphone"/></label>
         <label id="name-label" for="name" >Pays <input required id="name" type="text" name="Pays:" placeholder="Entrez votre Pays " /></label>
@@ -73,33 +80,15 @@
         <label id="name-label" for="name" >Êtes-vous disponible pour des déplacements professionnels occasionnels ? <input required id="name" type="text" name="Deplacements_occasionnels:" placeholder="Pouvez-vous vous déplacer souvent ? " /></label>
         <label id="name-label" for="name" >Avez-vous des contraintes particulières concernant vos horaires ou lieu de travail ? <input required id="name" type="text" name="Contraintes_particulieres:" placeholder="Contraintes particulières " /></label>
         <label id="name-label" for="name" >Pourquoi devrions-nous vous choisir vous plutôt qu'un autre candidat ? <input required id="name" type="text" name="Pourquoi_Vous:" placeholder="Pourquoi Vous ? " /></label>
-        <label id="name-label" for="name" >Avez-vous des questions à nous poser sur le poste ou l'entreprise ? <input required id="name" type="text" name="Des_questions:" placeholder="Des questions ? " /></label>
+        <label id="name-label" for="name" >Avez-vous des questions à nous poser sur le poste ou l'entreprise ? <input required id="name" type="text" name="Des_questions:" placeholder="Posez vos questions ? " /></label>
       </fieldset>
-      <!-- <fieldset id="feedback">
-        <legend>Did you have a positive experience of me?</legend>
-        <label><input type="radio" name="opinion" value="Yes" class="inline" />Yes</label>
-        <label></label><input type="radio" name="opinion" value="No" class="inline" />No</label> 
-        <label><input type="radio" name="opinion" value="Neutral" class="inline" />Neutral</label>
-      </fieldset>
-      <fieldset>
-        <label>Check mark the things you like about me:<br> <input type="checkbox" value="respect-kindness" class="inline" />Show of respect and kindness<label>
-          <label><input type="checkbox" value="professionalism" class="inline" />Professionalism<label>
-          <label><input type="checkbox" value="dedication" class="inline" />Dedication<label>
-          <label><input type="checkbox"value="courage" class="inline" />Standing up for my belief and values<label>
-        <label>Please provide a detailed feedback<textarea>You can improve on ...</textarea></label>
-      </fieldset> -->
       <input id="submit" type="submit" value="ENVOYER" />
     </form>
-    
         <div style="display: flex; justify-content: center;"><a href="https://www.facebook.com/profile.php?id=61555783898961" target="_blank" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="IC Dark Logo Transparent A.png" alt="" style="width: 100px;">
       </a></div>
-        <div style="display: flex; justify-content: center; margin-bottom: 30px; margin-top: 20px;">&copy; Copyright 2024 &nbsp; <strong><span>Ivoire Cosmety'C</span></strong>. Tout droit réservé.
-      </div>
-      <div style="display: flex; justify-content: center; text-align: center; margin-bottom: 30px; font-size: 12px; font-family: 'Courier New', Courier, monospace;">Contactez-nous: (+225) 05 65 20 15 07 / 07 58 75 48 38</div>
-     
-     
+        <div class="copy" style="display: flex; justify-content: center; text-align: center; margin: 15px;" ><P>&copy; <strong>Ivoire Cosmety'C</strong> 2024 <br> Tout droits réservés <br>Contactez-nous : <br>(+225) 05 65 20 15 07  <br> (+225) 07 58 75 48 38</P></div>
   </body>
 </html>
 
