@@ -73,7 +73,9 @@ input > label {
 }
 
 input[type="submit"] {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80%;
   margin: 1em auto;
   height: 2em;
@@ -83,4 +85,8 @@ input[type="submit"] {
   border-color: #cc9900;
   min-width: 300px;
   border-radius: 50px;
+}
+
+.copy p {
+  font-size: 15px !important;
 }
